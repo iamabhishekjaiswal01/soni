@@ -1,7 +1,4 @@
-window.onload=function(){
-var div=document.getElementById("me");
-div.onscroll=songcontrol;
-}
+window.addEventListener("scroll",songcontrol);
 
 function songcontrol ()
 {
