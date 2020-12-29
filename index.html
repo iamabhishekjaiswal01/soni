@@ -48,21 +48,8 @@
 <audio id="song" preload="auto">
 <source src="foryou.mp3" type="audio/mpeg;">
 </audio>
-<script>
-window.addEventListener("scroll",songcontrol);
+<script src="love.js">
 
-function songcontrol()
-{
-var songElement=document.getElementById("song");
-songElement.preload="auto";
-if (document.body.scrollTop > 650 || document.documentElement.scrollTop > 650) {
-songElement.pause();
-}
-else
-{
-songElement.play();
-}
-}
 </script>
 </div>
 </body>
