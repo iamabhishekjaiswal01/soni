@@ -1,5 +1,5 @@
 window.onload=function(){
-var div=document.getElementById("purpose");
+var div=document.getElementById("me");
 div.addEventListener("scroll",songcontrol);
 }
 
