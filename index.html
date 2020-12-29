@@ -5,8 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-value=1.0" >
 <title> Love you soni </title>
 <link href="love.css" rel="stylesheet">
+<script src="love.js"></script>
 </head> 
-<body> 
+<body onscroll="songcontrol"> 
 <div id="wish"></div>
 <div id="wish2"></div>
 <div id="wish1"></div>
@@ -45,25 +46,9 @@
 <h2>I’m glad destiny give me the chance</h2>
 
 <h1> I love you soni ❤️ </h1>
-<audio id="song" preload="auto">
+<audio id="song" preload="auto" >
 <source src="foryou.mp3" type="audio/mpeg;">
 </audio>
-<script>
-window.addEventListener("scroll",songcontrol);
-
-function songcontrol()
-{
-var songElement=document.getElementById("song");
-songElement.preload="auto";
-if (document.body.scrollTop > 850 || document.documentElement.scrollTop > 850)
-{
-document.getElementById("song").pause()
-}
-else
-{
-document.getElementById("song").play();
-}
-</script>
 </div>
 </body>
 </html>
