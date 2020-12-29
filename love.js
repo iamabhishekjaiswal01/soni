@@ -1,16 +1,14 @@
-window.onload=function ()
-{
-document.getElementById("song").play();
-}
-
 window.addEventListener("scroll",songcontrol);
+
 function songcontrol()
 {
-if (document.body.scrollTop > 750) {
-document.getElementById("song").pause();
+var songElement=document.getElementById("song");
+songElement.load();
+if (document.body.scrollTop > 750 || document.documentElement.scrollTop > 750) {
+songElement.pause();
 }
 else
 {
-document.getElementById("song").play();
+songElement.play();
 }
 }
