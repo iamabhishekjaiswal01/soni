@@ -1,0 +1,79 @@
+body
+{
+font-family:cursive;
+background-color:black;
+color:white;
+}
+#wish{
+  height:600px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+background-image:url("bg.jpg");
+color:white;
+}
+
+
+
+#wish1{
+/* Full height */
+  height:600px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+background-image:url("bg2.jpg");
+color:white;
+}
+
+#wish2{
+height:600px;
+/* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+background-image:url("bg3.jpg");
+color:white;
+}
+
+
+
+#wish3{
+height:600px;
+/* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+background-image:url("bg4.jpg");
+color:white;
+}
+
+#wish4{
+height:600px;
+/* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+background-image:url("Bg1.jpg");
+color:white;
+}
+
+#purpose{
+
+background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 1px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}
