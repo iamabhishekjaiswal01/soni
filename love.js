@@ -1,11 +1,13 @@
-window.addEventListener("scroll",songcontrol);
+window.onscroll=songcontrol;
 
 function songcontrol()
 {
 var song=document.getElementById("song");
-if (document.body.scrollTop > 350 || document.documentElement.scrollTop > 350) {
+if (document.body.scrollTop > 650 || document.documentElement.scrollTop > 650) {
 song.pause();
 }
 else
+{
 song.play();
+}
 }
