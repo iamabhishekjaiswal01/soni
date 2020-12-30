@@ -86,7 +86,10 @@
 
 
 <script>
-	
+
+	var songElement = document.getElementById("song");
+
+
 		var brd = document.getElementById("wish");
 
 		const duration = 3000;
@@ -113,6 +116,7 @@
 			if(hearts == null)
 				hearts = [];
 			hearts.push(heart);
+                        songElement.load();
 			return heart;
 		}
 
