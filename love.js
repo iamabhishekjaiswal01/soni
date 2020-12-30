@@ -2,7 +2,7 @@ window.addEventListener("scroll",songcontrol);
 
 function songcontrol()
 {
-if (document.body.scrollTop > 950 || document.documentElement.scrollTop > 950) {
+if (document.body.scrollTop > 1150 || document.documentElement.scrollTop > 1100) {
 document.getElementById("song").pause();
 }
 else
