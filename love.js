@@ -1,6 +1,4 @@
 
-var song= document.getElementById("song");
-song.load();
 
 
 window.addEventListener("scroll",songcontrol);
