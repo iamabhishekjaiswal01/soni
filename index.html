@@ -8,6 +8,19 @@
 <script src="love.js"></script>
 <style>
 
+
+.ml12 {
+  font-weight: 200;
+  font-size: 1.8em;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+}
+
+.ml12 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+
 @keyframes heartfade {
 			0% {
 				opacity : 1;
@@ -76,11 +89,7 @@
 <h2>But just so you know, my cut is 50 percent! 😉</h2>
 <br><br>
 
-<h1 class="ml4">
-  <span class="letters letters-1">I</span>
-  <span class="letters letters-2">Love</span>
-  <span class="letters letters-3">You ❤️</span>
-</h1>
+<h1 class="ml12">I love you Soni ❤️</h1>
 
 <audio id="song" preload="auto" autoplay loop >
 <source src="foryou.mp3" type="audio/mpeg;base64">
@@ -187,7 +196,26 @@
 			}
 		}
 
+var textWrapper = document.querySelector('.ml12');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
 
+anime.timeline({loop: true})
+  .add({
+    targets: '.ml12 .letter',
+    translateX: [40,0],
+    translateZ: 0,
+    opacity: [0,1],
+    easing: "easeOutExpo",
+    duration: 1200,
+    delay: (el, i) => 500 + 30 * i
+  }).add({
+    targets: '.ml12 .letter',
+    translateX: [0,-30],
+    opacity: [1,0],
+    easing: "easeInExpo",
+    duration: 1100,
+    delay: (el, i) => 100 + 30 * i
+  });
 
 	</script>
 
