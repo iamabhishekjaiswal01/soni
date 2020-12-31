@@ -22,7 +22,6 @@ background-image:url("bg3.jpg");
 
 #wish3{
 background-image:url("bg4.jpg");
-text-align:bottom;
 }
 
 
@@ -115,23 +114,3 @@ background-color: rgb(0,0,0); /* Fallback color */
                  0px 34px 30px rgba(0,0,0,0.1);
 }
 
-.ml9 {
-  position: relative;
-  font-weight: 100;
-  font-size: 4em;
-}
-
-.ml9 .text-wrapper {
-  position: relative;
-  display: inline-block;
-  padding-top: 0.2em;
-  padding-right: 0.05em;
-  padding-bottom: 0.1em;
-  overflow: hidden;
-}
-
-.ml9 .letter {
-  transform-origin: 50% 100%;
-  display: inline-block;
-  line-height: 1em;
-}
